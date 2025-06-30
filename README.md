@@ -2,6 +2,8 @@
 
 Import SVD files into PeakRDL.
 
+Using SVD importer from [xobs/peakrdl_svd](https://github.com/xobs/peakrdl_svd)
+
 ## Installation
 
 ```sh
