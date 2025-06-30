@@ -4,3 +4,6 @@ Scripts/
 Include/
 pyvenv.cfg
 __pycache__/
+build/*
+.venv/*
+*.egg-info

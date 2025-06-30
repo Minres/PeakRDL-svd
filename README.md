@@ -1,12 +1,23 @@
 # PeakRDL SVD Importer
 
-Import SVD files into PeakRDL for use with nice SVD display.
+Import SVD files into PeakRDL.
+
+## Installation
+
+```sh
+python -m venv .venv
+source .venv/bin/activate
+pip install peakrdl .
+```
 
 ## Usage
 
+### Generate HTML
 ```sh
-python -mvenv .
-. bin/activate
-pip install peakrdl
-peakrdl html STM32F429.svd -o html_dir
+peakrdl html example/STM32F429.svd -o html_dir
+```
+
+### Generate SystemRDL
+```sh
+peakrdl systemrdl example/STM32F429.svd -o STM32F429.rdl
 ```
