@@ -1,1 +1,3 @@
-xxx.svd
+*.svd
+*.pyc
+/test/input
