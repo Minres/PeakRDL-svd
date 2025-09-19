@@ -7,20 +7,23 @@ name = "peakrdl-svd"
 dynamic = ["version"]
 requires-python = ">=3.9"
 dependencies = [
-    "systemrdl-compiler ~= 1.24",
+    "systemrdl-compiler >= 1.24.0, < 2",
     "cmsis-svd-codec"
 ]
 
 authors = [
-    {name="Alex Mykyta"},
-    {name="Eyck Jentzsch"}
+    { name="Alex Mykyta" },
+    { name = "Sean Cross" },
+    { name = "Liamaev Mikhail" },
+    { name="Eyck Jentzsch" }
 ]
-description = "Export SVD XML from the systemrdl-compiler register model"
+description = "Import and export SVD XML to/from the systemrdl-compiler register model"
 readme = "README.md"
 license = {text = "LGPLv3"}
 keywords = [
     "SystemRDL", "PeakRDL", "CSR", "compiler", "tool", "registers", "generator",
     "SVD",
+    "svd",
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -49,3 +52,6 @@ version = {attr = "peakrdl_svd.__about__.__version__"}
 
 [project.entry-points."peakrdl.exporters"]
 svd = "peakrdl_svd.__peakrdl__:Exporter"
+
+[project.entry-points."peakrdl.importers"]
+svd = "peakrdl_svd.__peakrdl__:Importer"
