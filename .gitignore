@@ -1,0 +1,12 @@
+html_dir/
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+__pycache__/
+build/*
+.venv/*
+*.egg-info
+*.svd
+*.pyc
+/test/input
