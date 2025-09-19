@@ -7,11 +7,10 @@ Using PeakRDL SVD from [SystemRDL/PeakRDL-svd](https://github.com/SystemRDL/Peak
 ## Installation
 
 ```sh
+git clone https://github.com/SystemRDL/PeakRDL-svd
 python -m venv .venv
 source .venv/bin/activate
-pip install peakrdl .
-git clone https://github.com/SystemRDL/PeakRDL-svd
-pip install ./PeakRDL-svd
+pip install peakrdl ./PeakRDL-svd
 ```
 
 ## Usage
